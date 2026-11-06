@@ -4,11 +4,11 @@
   W/L dotyczą bieżącego streamu; WR liczy się automatycznie.
 */
 const stats = {
-  rank: "IMMORTAL 1",
-  rr: 0,
+  rank: "PLATINUM 1",
+  rr: 79,
   wins: 0,
   losses: 0,
-  kd: "1.00"
+  kd: "1.04"
 };
 
 const total = stats.wins + stats.losses;

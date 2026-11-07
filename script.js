@@ -1,19 +1,7 @@
-/*
-  Prosty overlay z ręczną edycją statystyk.
-  Zmień wartości w obiekcie stats poniżej.
-  W/L dotyczą bieżącego streamu; WR liczy się automatycznie.
-*/
-const stats = {
-  rank: "PLATINUM 1",
-  rr: 79,
-  wins: 0,
-  losses: 0,
-  kd: "1.04"
-};
-
+/* W/L dotyczą bieżącego streamu; WR oblicza się automatycznie. */
+const stats = { rank: "PLATINUM 1", rr: 79, wins: 0, losses: 0, kd: "1.04" };
 const total = stats.wins + stats.losses;
-const winRate = total ? Math.round((stats.wins / total) * 100) : 0;
-
+const winRate = total ? Math.round(stats.wins / total * 100) : 0;
 document.getElementById("rank").textContent = stats.rank;
 document.getElementById("rr").textContent = stats.rr;
 document.getElementById("wins").textContent = stats.wins;

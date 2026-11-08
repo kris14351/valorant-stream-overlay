@@ -1,5 +1,5 @@
 /* W/L dotyczą bieżącego streamu; WR oblicza się automatycznie. */
-const stats = { rank: "PLATINUM 1", rr: 59, wins: 0, losses: 0, kd: "0.00" };
+const stats = { rank: "PLATINUM 1", rr: 78, wins: 1, losses: 0, kd: "1.20" };
 const total = stats.wins + stats.losses;
 const winRate = total ? Math.round(stats.wins / total * 100) : 0;
 document.getElementById("rank").textContent = stats.rank;
